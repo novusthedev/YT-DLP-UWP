@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="YT_DLP_UWP.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea">
+        <TextBox
+            x:Name="VideoURL"
+            Width="575"
+            Margin="10,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            PlaceholderText="Video URL to Download"
+            RenderTransformOrigin="0,0.5"
+            Text=""
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="ToggleButton"
+            Width="137"
+            Height="32"
+            Margin="10,50,0,0"
+            VerticalAlignment="Top"
+            Click="ToggleButton_Click"
+            Content="💾 Save Video"
+            RenderTransformOrigin="0,0.5" />
+        <Button
+            x:Name="UpdateButton"
+            Width="137"
+            Height="32"
+            Margin="150,50,0,0"
+            VerticalAlignment="Top"
+            Click="UpdateButton_Click"
+            Content="⬆️ Update DLP"
+            RenderTransformOrigin="0,0.5" />
+        <TextBlock
+            Margin="10,0,0,10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            RenderTransformOrigin="0,1"
+            Text="You're using a beta build. This app uses YT-DLP, which is under the Unlicense. You'll need FFMPEG installed to save audio. If this app is not working, Try updating YT-DLP."
+            TextWrapping="Wrap" />
+    </Grid>
+</Page>

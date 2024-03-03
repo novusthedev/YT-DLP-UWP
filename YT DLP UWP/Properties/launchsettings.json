@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "YT DLP UWP (Package)": {
+      "commandName": "MsixPackage",
+      "remoteDebugEnabled": false,
+      "remoteDebugMachine": "DESKTOP-CS87LU1",
+      "authenticationMode": "Universal"
+    },
+    "YT DLP UWP (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
